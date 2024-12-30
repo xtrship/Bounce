@@ -19,12 +19,12 @@ canvas.addEventListener('click', function(event){
     let mouseY = event.clientY - canvas.offsetTop;
 
     const radius = 50;
-    let dx = 5;  // x velocity
+    let dx = 7;  // x velocity
     let dy = 4;  // y velocity
 
     function update() {
         // Clear the canvas before drawing
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // ctx.clearRect(0, 0, canvas.width, canvas.height);
         
         // Draw the ball
         drop(mouseX, mouseY);
@@ -45,6 +45,8 @@ canvas.addEventListener('click', function(event){
         
         // Continue animation
         requestAnimationFrame(update);
+
+        console.log(dx, dy,);
     }
     
     // Start the animation
