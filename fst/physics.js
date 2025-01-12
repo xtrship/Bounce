@@ -24,7 +24,7 @@ canvas.addEventListener('click', function(event){
 
     function update() {
         // Clear the canvas before drawing
-        // ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         
         // Draw the ball
         drop(mouseX, mouseY);
